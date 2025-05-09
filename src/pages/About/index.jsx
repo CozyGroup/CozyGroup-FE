@@ -1,1 +1,8 @@
-<h1>Đây là trang giới thiệu</h1>
+const About = () =>{
+    return(
+        <>
+        Trang About
+        </>
+    )
+}
+export default About;
