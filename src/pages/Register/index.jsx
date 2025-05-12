@@ -31,7 +31,7 @@ const Register = () => {
         items={[{ label: "Trang chủ", href: "/" }, { label: "Đăng ký tài khoản" }]}
       />
       <div className="w-full p-[30px] my-10 font-quicksand text-text flex flex-col lg:flex-row gap-6 md:align-center md:justify-center">
-        <div className="bg-white shadow-lg rounded-md flex flex-col md:flex-row w-full max-w-3xl">
+        <div className="bg-white shadow-lg flex flex-col md:flex-row w-full max-w-3xl">
           {/* Form Đăng ký */}
           <div className="md:w-7/12 w-full p-8">
             <h2 className="text-xl font-bold mb-6 text-center md:text-left">ĐĂNG KÝ TÀI KHOẢN</h2>
@@ -100,8 +100,8 @@ const Register = () => {
           </div>
 
           {/* Quyền lợi */}
-          <div className="md:w-5/12 w-full flex flex-col justify-start align-top">
-            <div className="bg-gray-100 p-8">
+          <div className="md:w-5/12 w-full flex flex-col justify-start align-top bg-gray-100 p-8">
+            <div className="">
               <h3 className="font-bold mb-4 mt-11 text-left">Quyền lợi khi đăng ký thành viên</h3>
               <ul className="text-sm mb-6 space-y-2 text-left mt-8">
                 <li>Vận chuyển siêu tốc</li>
