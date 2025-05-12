@@ -153,7 +153,7 @@ const Menu = () => {
                             <div
                                 className={`bg-white p-3 sm:p-5 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 relative border
                                 ${product.status === 'out-of-stock' ? 'opacity-70 border-gray-300' : ''}
-                                ${product.status === 'discount' ? 'border-red-500' : 'border-gray-200'}`}
+                                ${product.status === 'discount' ? '' : 'border-gray-200'}`}
                                 style={{ minWidth: '180px' }}
                             >
                                 {product.status === 'discount' && (

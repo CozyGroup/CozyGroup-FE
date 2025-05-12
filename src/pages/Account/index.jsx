@@ -8,7 +8,7 @@ const Account = () => {
                 { label: 'Trang chủ', href: '/' },
                 { label: "Tài khoản", href: '/account' },
             ]} />
-            <div className="w-full lg:px-[60px] px-[20px] lg:py-[50px] py-[30px] flex flex-col lg:flex-row">
+            <div className="w-full lg:px-[60px] px-[20px] lg:py-[50px] py-[30px] flex flex-col lg:flex-row font-quicksand">
                 <AccountSidebar/>
                 <div>
                 <h1 className="text-[19px] text-primary font-quicksand font-bold mt-[25px] lg:mt-0">THÔNG TIN TÀI KHOẢN</h1>

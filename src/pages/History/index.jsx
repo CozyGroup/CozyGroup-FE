@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navigation from "../../components/ui/Navigation";
+import AccountSidebar from "../../components/ui/AccountSidebar";
 
 const orders = [
     {
@@ -42,6 +43,28 @@ const orders = [
         shippingFee: "XXX.XXX VND",
         total: "XXX.XXX VND",
     },
+    {
+        id: "#ABC",
+        date: "01/01/2025",
+        branch: "Abc,Xyz,.....",
+        value: "111111 VND",
+        payment: "Online",
+        shipping: "xXxX",
+        customer: {
+            name: "Mr.Cozy",
+            phone: "0123456789",
+            address: "abc,def",
+        },
+        items: [
+            { name: "Bò lúc lắc", quantity: 2, price: "xxx.xxx VND" },
+            { name: "Coca", quantity: 1, price: "xxx.xxx VND" },
+        ],
+        vat: "XXX.XXX VND",
+        shippingFee: "XXX.XXX VND",
+        total: "XXX.XXX VND",
+    },
+
+
 
 ];
 
@@ -66,7 +89,6 @@ const OrderDetailModal = ({ order, onClose }) => {
                     <p><strong>Địa chỉ:</strong> {order.customer.address}</p>
                 </div>
 
-                {/* Bảng trên desktop */}
                 <table className="hidden md:table w-full text-sm border border-collapse my-4">
                     <thead className="bg-green-700 text-white">
                         <tr>
@@ -86,7 +108,6 @@ const OrderDetailModal = ({ order, onClose }) => {
                     </tbody>
                 </table>
 
-                {/* Danh sách trên mobile */}
                 <div className="md:hidden space-y-2 my-4">
                     {order.items.map((item, idx) => (
                         <div key={idx} className="border p-2 rounded shadow-sm text-sm">
@@ -109,32 +130,16 @@ const OrderDetailModal = ({ order, onClose }) => {
     );
 };
 
-const History = () => {
+const Account = () => {
     const [selectedOrder, setSelectedOrder] = useState(null);
 
     return (
         <>
-            <Navigation
-                items={[
-                    { label: "Trang chủ", href: "/" },
-                    { label: "Lịch sử mua hàng" },
-                ]}
-            />
-            <div className="flex flex-col md:flex-row p-4 gap-8 my-12 max-w-6xl mx-auto font-quicksand">
-                {/* Sidebar */}
-                <div className="w-full md:w-1/4 bg-white p-4 shadow rounded mt-6">
-                    <h3 className="font-bold mb-2">TRANG TÀI KHOẢN</h3>
-                    <p className="font-semibold">Xin chào, xxx!</p>
-                    <ul className="mt-4 space-y-2 text-sm text-gray-700">
-                        <li>Thông tin tài khoản</li>
-                        <li className="font-bold text-black">Lịch sử mua hàng</li>
-                        <li>Đổi mật khẩu</li>
-                        <li>Ví mua hàng</li>
-                    </ul>
-                </div>
+            <Navigation items={[{ label: 'Trang chủ', href: '/' }, { label: 'Lịch sử mua hàng', href: '/account' }]} />
+            <div className="w-full lg:px-[60px] px-[20px] lg:py-[50px] py-[30px] flex flex-col lg:flex-row gap-6">
+                <AccountSidebar />
 
-                {/* Order Table */}
-                <div className="w-full md:w-3/4 bg-white p-4 shadow rounded overflow-auto">
+                <div className="w-full bg-white p-4 shadow rounded overflow-auto">
                     <h3 className="font-bold mb-4">LỊCH SỬ MUA HÀNG</h3>
                     <table className="w-full text-sm border border-collapse">
                         <thead className="bg-green-700 text-white">
@@ -167,17 +172,12 @@ const History = () => {
                             ))}
                         </tbody>
                     </table>
-
                 </div>
             </div>
 
-            {/* Modal hiển thị */}
-            <OrderDetailModal
-                order={selectedOrder}
-                onClose={() => setSelectedOrder(null)}
-            />
+            {selectedOrder && <OrderDetailModal order={selectedOrder} onClose={() => setSelectedOrder(null)} />}
         </>
     );
 };
 
-export default History;
+export default Account;

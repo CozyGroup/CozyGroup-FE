@@ -29,7 +29,7 @@ const Login = () => {
                         <div className="text-center text-sm text-gray-500 mb-4 cursor-pointer hover:underline">
                             Quên mật khẩu?
                         </div>
-                        <button className="w-full border border-[#096A4A] bg-[#096A4A] text-white py-2 rounded mb-4 transition-all hover:bg-white hover:text-[#096A4A] hover:border-[#096A4A]">
+                        <button className="w-full border  bg-[#096A4A] text-white py-2 rounded mb-4 transition-all hover:bg-[#FF0000]">
                             Đăng nhập
                         </button>
                         <p className="text-sm text-center mb-4">
@@ -58,7 +58,7 @@ const Login = () => {
                             </ul>
                         </div>
                         <div className="mt-10">
-                            <button className="border border-[#096A4A] bg-[#096A4A] text-white px-6 py-2 rounded transition-all hover:bg-white hover:text-[#096A4A] hover:border-[#096A4A]">
+                            <button className="border  bg-[#096A4A] text-white px-6 py-2 rounded transition-all hover:bg-[#FF0000]">
                                 Đăng nhập
                             </button>
                         </div>
