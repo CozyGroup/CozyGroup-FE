@@ -15,8 +15,8 @@ module.exports = {
       colors: {
         primary: '#096743',       // Màu chủ đạo
         price: '#DD0C1B',         // Màu giá 
-        button: '#10B981',        // Màu nút bấm
-        button_hover: '#F3F4F6',  // Màu hover nút bấm
+        button: '#FF0000',        // Màu nút bấm
+        button_hover: '#DD0C1B',  // Màu hover nút bấm
         text: '#515151',          // Màu chữ 
       },
     },

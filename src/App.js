@@ -10,6 +10,7 @@ import MainLayout from "./components/layout/MainLayout";
 import Contact from "./pages/Contact"
 import Wallet from "./pages/Wallet"
 import Account from "./pages/Account"
+import Cart from "./pages/Cart"
 
 
 export default function App() {
@@ -25,6 +26,8 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/account/wallet" element={<Wallet />} />
         <Route path="/account" element={<Account />} />
+        <Route path="/cart" element={<Cart />} />
+
       </Route>
     </Routes>
   );

@@ -1,4 +1,5 @@
 import { FaEnvelope, FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import { IoMailOutline } from "react-icons/io5";
 import logo from "../../../assets/image/logo/logo-2.jpg"
 import { Link } from "react-router-dom";
 import footer_bg from "../../../assets/image/footer-bg/home_counters_bkg.png";
@@ -54,7 +55,7 @@ const Footer = () => {
             <div className="bg-white border-t text-text text-sm">
                 <div className="container mx-auto px-4 py-6 flex flex-wrap justify-between gap-4">
                     <div className="flex items-center gap-2 flex-wrap basis-full md:basis-[65%]">
-                        <FaEnvelope className="text-xl text-text" />
+                        <IoMailOutline className="text-xl" />
                         <span className="text-black font-quicksand me-7">ĐĂNG KÝ NHẬN TIN:</span>
                         <input
                             type="email"
@@ -130,7 +131,7 @@ const Footer = () => {
 
 
                 <div className="border-t py-4 text-center text-gray-500">
-                    Team CozyCoffee mãi đỉnh
+                   &copy; 2025. Copyright by CozyGroup 
                 </div>
             </div>
         </div>

@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const  Navigation = ({ items = [] }) => {
+
+  
   return (
     <nav className="bg-gray-100 text-gray-600 text-sm py-3 px-6 rounded font-quicksand text-">
       <ol className="list-reset flex">
