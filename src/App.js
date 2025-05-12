@@ -7,7 +7,6 @@ import Register from "./pages/Register"
 import Menu from "./pages/Menu";
 import Login from "./pages/Login";
 import History from "./pages/History";
-import MainLayout from "./components/layout/MainLayout";
 import Contact from "./pages/Contact"
 import Wallet from "./pages/Wallet"
 import Account from "./pages/Account"

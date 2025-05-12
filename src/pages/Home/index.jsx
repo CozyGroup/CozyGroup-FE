@@ -10,7 +10,7 @@ import { GrAdd } from "react-icons/gr";
 const Home = () => {
     return (
         <>
-            <main className="container">
+            <main className="">
                 <section>
                     <div className="Banner">
                         <img src={banner_home} alt="" />
