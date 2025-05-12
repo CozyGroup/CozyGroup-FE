@@ -19,7 +19,7 @@ const Header = () => {
                     <Link to="#" className="hover:text-primary">TRANG CHỦ</Link>
                     <Link to="/menu" className="hover:text-primary">THỰC ĐƠN</Link>
                     <Link to="#" className="hover:text-primary">GIỚI THIỆU</Link>
-                    <Link to="#" className="hover:text-primary">LIÊN HỆ</Link>
+                     <Link to="/contact" className="hover:text-primary">LIÊN HỆ</Link>
                     <Link to="reservation" className="hover:text-primary">ĐẶT BÀN</Link>
                 </nav>
                 <div className="flex items-center gap-4">

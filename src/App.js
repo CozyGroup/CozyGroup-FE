@@ -7,6 +7,10 @@ import Register from "./pages/Register"
 import Menu from "./pages/Menu";
 import Login from "./pages/Login";
 import MainLayout from "./components/layout/MainLayout";
+import Contact from "./pages/Contact"
+import Wallet from "./pages/Wallet"
+import Account from "./pages/Account"
+
 
 export default function App() {
   return (
@@ -16,8 +20,11 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/reservation" element={<Reservation />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/menu" element={<Menu />} /> 
-        <Route path="/login" element={<Login />} /> 
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/account/wallet" element={<Wallet />} />
+        <Route path="/account" element={<Account />} />
       </Route>
     </Routes>
   );
