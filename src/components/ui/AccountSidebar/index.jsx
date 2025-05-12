@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const menuItems = [
   { label: "Thông tin tài khoản", path: "/account" },
-  { label: "Lịch sử mua hàng", path: "/tai-khoan/lich-su" },
+  { label: "Lịch sử mua hàng", path: "/history" },
   { label: "Đổi mật khẩu", path: "/tai-khoan/doi-mat-khau" },
   { label: "Ví mua hàng", path: "/account/wallet" },
 ];
