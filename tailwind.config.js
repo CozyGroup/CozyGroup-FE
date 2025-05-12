@@ -9,10 +9,10 @@ module.exports = {
         oswald: ['Oswald', 'sans-serif'],
         quicksand: ['Quicksand', 'sans-serif'],
       },
-       backgroundImage: {
+      backgroundImage: {
         'footer-bg': "url('../src/assets/image/footer-bg/home_counters_bkg.png')"
       },
-        colors: {
+      colors: {
         primary: '#096743',       // Màu chủ đạo
         price: '#DD0C1B',         // Màu giá 
         button: '#10B981',        // Màu nút bấm

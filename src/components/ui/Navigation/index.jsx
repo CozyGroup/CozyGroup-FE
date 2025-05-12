@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const  Navigation = ({ items = [] }) => {
   return (
-    <nav className="bg-gray-100 text-gray-600 text-sm py-3 px-6 rounded">
+    <nav className="bg-gray-100 text-gray-600 text-sm py-3 px-6 rounded font-quicksand text-">
       <ol className="list-reset flex">
         {items.map((item, index) => (
           <li key={index} className="flex items-center">

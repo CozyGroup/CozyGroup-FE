@@ -20,6 +20,7 @@ const Header = () => {
                     <Link to="#" className="hover:text-primary">THỰC ĐƠN</Link>
                     <Link to="#" className="hover:text-primary">GIỚI THIỆU</Link>
                     <Link to="#" className="hover:text-primary">LIÊN HỆ</Link>
+                    <Link to="reservation" className="hover:text-primary">ĐẶT BÀN</Link>
                 </nav>
                 <div className="flex items-center gap-4">
                     <div className="flex items-center gap-2 text-text font-quicksand">
