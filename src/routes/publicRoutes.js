@@ -2,6 +2,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Menu from "../pages/Menu";
 import Login from "../pages/Login"; 
+import History from "../pages/History"; 
 
 export const publicRoutes = [
   {
@@ -19,5 +20,9 @@ export const publicRoutes = [
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/history",
+    element: <History />,
   },
 ];
