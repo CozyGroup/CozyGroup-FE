@@ -11,6 +11,7 @@ import Contact from "./pages/Contact"
 import Wallet from "./pages/Wallet"
 import Account from "./pages/Account"
 import Cart from "./pages/Cart"
+import DetailProduct from "./pages/DetailProduct"
 
 
 export default function App() {
@@ -27,7 +28,7 @@ export default function App() {
         <Route path="/account/wallet" element={<Wallet />} />
         <Route path="/account" element={<Account />} />
         <Route path="/cart" element={<Cart />} />
-
+        <Route path="/detail-product" element={<DetailProduct />} />
       </Route>
     </Routes>
   );
