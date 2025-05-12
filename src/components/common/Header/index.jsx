@@ -17,7 +17,7 @@ const Header = () => {
 
                 <nav className="hidden md:flex gap-6 text-text font-oswald text-[13px] ">
                     <Link to="#" className="hover:text-primary">TRANG CHỦ</Link>
-                    <Link to="#" className="hover:text-primary">THỰC ĐƠN</Link>
+                    <Link to="/menu" className="hover:text-primary">THỰC ĐƠN</Link>
                     <Link to="#" className="hover:text-primary">GIỚI THIỆU</Link>
                     <Link to="#" className="hover:text-primary">LIÊN HỆ</Link>
                     <Link to="reservation" className="hover:text-primary">ĐẶT BÀN</Link>

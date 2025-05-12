@@ -4,7 +4,9 @@ import About from "./pages/About"
 import MainLayout from "./components/layout/MainLayout"
 import Reservation from "./pages/Reservation"
 import Register from "./pages/Register"
-
+import Menu from "./pages/Menu";
+import Login from "./pages/Login";
+import MainLayout from "./components/layout/MainLayout";
 
 export default function App() {
   return (
@@ -12,9 +14,11 @@ export default function App() {
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="reservation" element={<Reservation />} />
-        <Route path="register" element={<Register />} />
+        <Route path="/reservation" element={<Reservation />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/menu" element={<Menu />} /> 
+        <Route path="/login" element={<Login />} /> 
       </Route>
     </Routes>
-  )
+  );
 }
