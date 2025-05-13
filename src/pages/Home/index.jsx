@@ -1,4 +1,3 @@
-import banner_home from '../../assets/image/imgs/home_bannerslider_1_picture.webp'
 import Diemtam1 from '../../assets/image/imgs/1_633df950ecd9499e85d4bd0ea6263741_grande.webp'
 import Diemtam2 from '../../assets/image/imgs/2_fad2e5c563514574a03ddca3d5084809_grande.webp'
 import Diemtam3 from '../../assets/image/imgs/3_5cf534a2ff524c2fa23ab7875647786c_grande.webp'
@@ -6,6 +5,7 @@ import Diemtam4 from '../../assets/image/imgs/4_a754f8f183ae410bb9b1cdb23d5df0d3
 import Diemtam5 from '../../assets/image/imgs/8_132c77e7f7b84eb093fd590b4ebc8d4d_grande.webp'
 import About from '../../assets/image/imgs/home_aboutus_img.jpg'
 import { GrAdd } from "react-icons/gr";
+import Banner from '../../assets/image/imgs/home_bannerslider_1_picture.webp'
 
 const Home = () => {
     return (
@@ -13,7 +13,7 @@ const Home = () => {
             <main className="">
                 <section>
                     <div className="Banner">
-                        <img src={banner_home} alt="" />
+                        <img src={Banner} alt="" />
                     </div>
                 </section>
                 <section>
@@ -221,8 +221,8 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
-                <section className='bg-[#fcfcfcfc]'>
-                    <div className='min-h-[800px] flex flex-col md:flex-row justify-center items-center gap-[30px] px-4 md:px-[5%] py-10'>
+                <section className='mt-[5%]'>
+                    <div className='min-h-[800px] flex flex-col md:flex-row justify-center items-center gap-[30px] px-[5%] md:px-[5%] py-[5%] bg-[#fcfcfcfc]'>
                         {/* Nội dung chữ */}
                         <div className='w-full md:w-[50%]'>
                             <h2 className='font-oswald text-primary text-[24px] md:text-left'>KHÁM PHÁ</h2>
@@ -259,7 +259,7 @@ const Home = () => {
                     </div>
                 </section>
                 <section>
-                    <div className=''>
+                    <div className='md:hidden'>
                         <p>
                             Món
                         </p>
