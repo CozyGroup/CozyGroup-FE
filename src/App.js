@@ -12,6 +12,7 @@ import Wallet from "./pages/Wallet"
 import Account from "./pages/Account"
 import Cart from "./pages/Cart"
 import DetailProduct from "./pages/DetailProduct"
+import ChangePassword from "./pages/ChangePassword"
 
 
 export default function App() {
@@ -30,6 +31,7 @@ export default function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/detail-product" element={<DetailProduct />} />
         <Route path="/history" element={<History />} /> 
+        <Route path="/account/change-password" element={<ChangePassword />} /> 
       </Route>
     </Routes>
   );

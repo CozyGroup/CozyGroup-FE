@@ -25,6 +25,56 @@ const Register = () => {
     alert('Đăng ký thành công!');
   };
 
+  const renderForm = () => (
+    <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
+      <Form>
+        <div className="mb-4">
+          <Field
+            name="fullName"
+            type="text"
+            placeholder="Họ và tên"
+            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none"
+          />
+          <ErrorMessage name="fullName" component="div" className="text-red-500 text-sm mt-1" />
+        </div>
+
+        <div className="mb-4">
+          <Field
+            name="email"
+            type="email"
+            placeholder="Email"
+            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none"
+          />
+          <ErrorMessage name="email" component="div" className="text-red-500 text-sm mt-1" />
+        </div>
+
+        <div className="mb-4">
+          <Field
+            name="phone"
+            type="text"
+            placeholder="Số điện thoại"
+            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none"
+          />
+          <ErrorMessage name="phone" component="div" className="text-red-500 text-sm mt-1" />
+        </div>
+
+        <div className="mb-4">
+          <Field
+            name="password"
+            type="password"
+            placeholder="Mật khẩu"
+            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none"
+          />
+          <ErrorMessage name="password" component="div" className="text-red-500 text-sm mt-1" />
+        </div>
+
+        <button type="submit" className="w-full bg-primary hover:bg-[#FF0000] text-white py-2 rounded">
+          Đăng ký
+        </button>
+      </Form>
+    </Formik>
+  );
+
   return (
     <>
       <Navigation
@@ -35,54 +85,7 @@ const Register = () => {
           {/* Form Đăng ký */}
           <div className="md:w-7/12 w-full p-8">
             <h2 className="text-xl font-bold mb-6 text-center md:text-left">ĐĂNG KÝ TÀI KHOẢN</h2>
-
-            <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
-              <Form>
-                <div className="mb-4">
-                  <Field
-                    name="fullName"
-                    type="text"
-                    placeholder="Họ và tên"
-                    className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none"
-                  />
-                  <ErrorMessage name="fullName" component="div" className="text-red-500 text-sm mt-1" />
-                </div>
-
-                <div className="mb-4">
-                  <Field
-                    name="email"
-                    type="email"
-                    placeholder="Email"
-                    className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none"
-                  />
-                  <ErrorMessage name="email" component="div" className="text-red-500 text-sm mt-1" />
-                </div>
-
-                <div className="mb-4">
-                  <Field
-                    name="phone"
-                    type="text"
-                    placeholder="Số điện thoại"
-                    className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none"
-                  />
-                  <ErrorMessage name="phone" component="div" className="text-red-500 text-sm mt-1" />
-                </div>
-
-                <div className="mb-4">
-                  <Field
-                    name="password"
-                    type="password"
-                    placeholder="Mật khẩu"
-                    className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none"
-                  />
-                  <ErrorMessage name="password" component="div" className="text-red-500 text-sm mt-1" />
-                </div>
-
-                <button type="submit" className="w-full bg-primary hover:bg-[#FF0000] text-white py-2 rounded">
-                  Đăng ký
-                </button>
-              </Form>
-            </Formik>
+            {renderForm()}
 
             <p className="text-sm text-center mt-4">
               Nếu có tài khoản, bạn có thể đăng nhập {' '}
@@ -117,7 +120,6 @@ const Register = () => {
         </div>
       </div>
     </>
-
   );
 };
 
