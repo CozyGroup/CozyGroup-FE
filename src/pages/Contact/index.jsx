@@ -61,7 +61,7 @@ const Contact = () => {
                         </select>
                         <textarea rows={5} placeholder="Nội dung" className="border border-[#e7e7e7]-300 font-medium bg-[#fbfbfb] text-[#333333] p-5"></textarea>
                         <p className="font-quicksand text-[#333333] font-normal">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
-                        <button type="submit" className="bg-[#096743] text-white rounded-[30px] px-[50px] py-[11px] text-[14px] max-w-[220px] font-normal font-oswald tracking-[0.8px] inline-block hover:bg-[#dd0c1b] focus:bg-[#dd0c1b] active:bg-[#dd0c1b] focus:outline-none focus:shadow-none mb-[50px] lg:mb-0"
+                        <button type="submit" className="bg-[#096743] text-white rounded-[30px] px-[50px] py-[11px] text-[14px] max-w-[220px] font-normal font-oswald tracking-[0.8px] inline-block hover:bg-[#FF0000] focus:bg-[#FF0000] active:bg-[#FF0000] focus:outline-none focus:shadow-none mb-[50px] lg:mb-0"
                         >GỬI CHO CHÚNG TÔI</button>
                     </form>
                 </div>
